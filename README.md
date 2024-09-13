@@ -1,5 +1,5 @@
-# AF-S2-devops
+# AS-S4-devops
 
-Atividade Formativa Semana 2
+Atividade Somativa Semana 4
 
 Esse é um repositório exclusivo para testes
