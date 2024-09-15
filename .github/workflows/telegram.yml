@@ -1,0 +1,33 @@
+name: telegram message
+on:
+  - push
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: send custom message with args
+        uses: ./
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          args: The ${{ github.event_name }} event triggered first step.
+
+
+#      -
+#        name: Send Telegram Message Ok
+#        uses: appleboy/telegram-action@master
+#        env:
+#          GITHUB_CONTEXT: ${{ toJSON(github) }}
+#        with:
+#          to: ${{ secrets.TELEGRAM_ID }}
+#          token: ${{ secrets.TELEGRAM_TOKEN }}
+#          format: markdown
+#          message: |
+#            *BRANCH COM SUCESSO*
+#            Applicação: * Telegram Integration*
+#            Branch: *${{ github.ref }}*
+#            Repository: *${{ github.repository }}*
+#            Owner: *${{ github.repository_owner }}*
