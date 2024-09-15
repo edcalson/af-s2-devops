@@ -14,13 +14,8 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           args: The ${{ github.event_name }} event triggered first step.
-          message: |
-            *BRANCH COM SUCESSO*
-            Applicação: * Telegram Integration*          
-            Branch: *${{ github.ref }}*
-            Repository: *${{ github.repository }}*
-            Owner: *${{ github.repository_owner }}*
 
+          
 #      -
 #        name: Send Telegram Message Ok
 #        uses: appleboy/telegram-action@master
