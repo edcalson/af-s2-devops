@@ -1,5 +1,7 @@
-# AF-S2-devops
+# AF-Semanas2a4-devops
 
-Atividade Formativa Semana 2
+Atividade Somativa Semana 2 a 4
 
-Esse é um repositório exclusivo para testes
+Esse é um repositório exclusivo Exercicios
+
+Todo Conteudo desse repositório também servirá para Atividade Somativa 1 
